@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MAXH@X AIM HELPER</title>
+
+  <!-- Favicon Link -->
+  <link rel="icon" href="https://github.com/maxhax123/ambutt/blob/main/Screenshot%202024-11-12%20041758.png?raw=true" type="image/png">
+
+  <style>
+    /* Reset and Base Styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #121212;
+      color: #fff;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .container {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 20px 0;
+      background-color: #1a1a1a;
+      border-bottom: 1px solid #444;
+    }
+
+    header .logo h1 {
+      font-size: 2.5rem;
+      color: #4CAF50; /* neon green for the gaming theme */
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #4CAF50;
+    }
+
+    /* Content Sections */
+    .section {
+      display: none;
+    }
+
+    .show {
+      display: block;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://via.placeholder.com/1600x800/2f2f2f/ffffff?text= ---------') no-repeat center center/cover;
+      text-align: center;
+      padding: 80px 0;
+      color: #fff;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 20px;
+    }
+
+    .cta-button {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 12px 30px;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      text-transform: uppercase;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #45a049;
+    }
+
+    /* Features Section */
+    .features {
+      padding: 50px 0;
+      background-color: #1a1a1a;
+      text-align: center;
+    }
+
+    .features h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .features ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .features li {
+      background-color: #2f2f2f;
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Download Section */
+    .download {
+      padding: 50px 0;
+      text-align: center;
+      background-color: #333;
+    }
+
+    .download h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .download p {
+      font-size: 1.25rem;
+      margin-bottom: 30px;
+    }
+
+    /* Footer Section */
+    footer {
+      background-color: #1a1a1a;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    footer .footer-links a {
+      color: #fff;
+      margin: 0 15px;
+      font-size: 1rem;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+
+    footer .footer-links a:hover {
+      color: #4CAF50;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .cta-button {
+        padding: 12px 25px;
+        font-size: 1.1rem;
+      }
+
+      .features ul {
+        grid-template-columns: 1fr;
+      }
+
+      footer .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .cta-button {
+        padding: 12px 20px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>MAXH@X AIM HELPER</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home" onclick="navigate('home')">Home</a></li>
+          <li><a href="#features" onclick="navigate('features')">Features</a></li>
+          <li><a href="#download" onclick="navigate('download')">Download</a></li>
+          <li><a href="#faq" onclick="navigate('faq')">FAQs</a></li>
+          <li><a href="#contact" onclick="navigate('contact')">Contact</a></li>
+          <li><a href="#privacy" onclick="navigate('privacy')">Privacy Policy</a></li>
+          <li><a href="#terms" onclick="navigate('terms')">Terms Of Use</a></li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="section hero show">
+    <div class="container">
+      <h2>Your Ultimate Game-Changer for Perfect Precision</h2>
+      <p>Supercharge your gameplay with automatic aim assistance for flawless precision and faster reactions. Free and easy-to-use.</p>
+      <p>MAXH@X AIM HELPER: Your Ultimate Game-Changer for Perfect Precision and Effortless Aiming
+MAXH@X AIM HELPER is a cutting-edge, easy-to-use, and completely free tool designed to elevate your gaming experience to the next level. Whether you're a casual gamer looking to have more fun, or an aspiring competitive player hoping to improve your accuracy, this tool offers an intuitive and effortless way to enhance your gameplay.
+
+With MAXH@X AIM HELPER, you no longer have to rely solely on your manual aiming skills to hit your target. This revolutionary software works seamlessly across a variety of games, providing you with superior precision, faster reaction times, and a smoother overall experience. Let’s break down the incredible advantages of using MAXH@X AIM HELPER:
+
+1. Perfect Aiming, Every Time
+The heart of MAXH@X AIM HELPER lies in its automatic aiming technology, designed to optimize your gameplay. It detects enemies in your line of sight and assists you in aiming more accurately by locking onto their specific color signatures. This ensures that no matter what game you're playing, you're always one step ahead of your opponents.
+
+The tool adjusts seamlessly to various game environments, whether you're playing first-person shooters (FPS) or third-person games. If you've ever struggled with accuracy, this tool helps you eliminate that frustration, giving you the confidence to focus on strategy and decision-making rather than worrying about hitting your shots.
+
+2. Ultra-Simple Installation and One-Click Setup
+Gone are the days of complicated software setups and hours spent configuring settings. MAXH@X AIM HELPER offers a simple, one-click download, making installation a breeze. No need for tech-savvy skills—just download, click, and you’re ready to go. It’s designed to be hassle-free, so even beginners can jump straight into their favorite games without delay.
+
+The interface is clean and user-friendly, with clear instructions that guide you through the process, ensuring that you get the most out of the tool with minimal effort.
+
+3. Cross-Game Compatibility
+One of the most remarkable features of MAXH@X AIM HELPER is its versatility. It’s built to work with a wide range of popular games, from fast-paced shooters like Call of Duty, Fortnite, and Apex Legends, to strategy-focused games and even single-player action-adventure titles. This means you don’t need a separate tool for each game—MAXH@X AIM HELPER adapts to whatever you're playing.
+
+This cross-game compatibility ensures that no matter where you’re playing, you’ll always have the same smooth, accurate aiming experience, making it a must-have tool for gamers who enjoy a wide variety of titles.
+
+4. Free and Virus-Free Experience
+MAXH@X AIM HELPER is offered completely free of charge, with no hidden costs or subscriptions. All the features you need are accessible from the get-go, and there’s no need to pay to unlock additional features or functionalities. This ensures that all players—whether you’re a seasoned pro or a casual gamer—can enjoy the benefits without any financial commitment.
+
+Additionally, the tool is designed with safety in mind. MAXH@X AIM HELPER has been optimized to be virus-free, giving you peace of mind that your computer and data are protected. It’s lightweight, fast, and won't slow down your system, allowing you to focus on what matters most: the game.
+
+5. Instant Performance Boost
+MAXH@X AIM HELPER delivers a noticeable boost in your performance right away. Whether you're playing in a competitive multiplayer match or going head-to-head in a solo campaign, the tool ensures that your aim is as sharp as it can be. It reduces the time spent tracking targets manually and lets you focus on movement, positioning, and tactics.
+
+By helping you land more shots with precision, MAXH@X AIM HELPER can transform your gameplay into a more rewarding, efficient experience, whether you're in the heat of a battle or working your way through a tough section of a game.
+
+6. No More Frustrating Missed Shots
+There’s nothing more frustrating than getting close to an enemy and missing those crucial shots that could win the game. With MAXH@X AIM HELPER, you won’t have to worry about missed opportunities anymore. The tool detects enemies based on their color cues and aligns your crosshair, ensuring that you hit your target with ease. This reduces stress and frustration, giving you more enjoyment from each game.
+
+Whether you're up against bots or other players in competitive matches, MAXH@X AIM HELPER ensures your performance is on par with the best.
+
+7. Real-Time, On-the-Fly Adjustments
+Another great feature is the ability to make real-time adjustments to the tool’s settings. As you progress through different levels or game modes, you can tweak settings like aim assist strength, target distance, and more, to suit your personal preferences. The tool adapts quickly to different in-game environments, ensuring you're always maximizing your potential.
+
+You can easily adjust it to suit different playstyles, whether you prefer a more aggressive approach or a more strategic, tactical style.
+
+8. Designed for All Skill Levels
+Whether you’re just starting or you're a professional gamer, MAXH@X AIM HELPER is designed to accommodate all skill levels. For newcomers, it takes the guesswork out of aiming and allows you to focus on other elements of the game. For seasoned veterans, it can be used as a performance enhancer to fine-tune your gameplay and get that extra edge you need to climb the ranks.
+
+9. Enjoyable, Stress-Free Gaming
+Ultimately, MAXH@X AIM HELPER helps you rediscover the joy of gaming without the stress of constantly worrying about your accuracy or falling behind in multiplayer matches. With its easy-to-use features and effective aim assistance, it lets you enjoy the game as it’s meant to be enjoyed: fun, fast-paced, and full of action.
+
+Whether you're a competitive player or just someone who loves to experience games to their fullest potential, MAXH@X AIM HELPER offers a smoother, more enjoyable gaming experience with every click.
+
+Conclusion
+In summary, MAXH@X AIM HELPER is the perfect tool for any gamer looking to improve their accuracy, reduce frustration, and enjoy a more seamless gaming experience. Its user-friendly design, virus-free software, and versatility across games make it an ideal choice for players of all skill levels. With MAXH@X AIM HELPER, you can experience smoother gameplay, faster response times, and most importantly—more fun!</p>
+      <a href="#download" class="cta-button">Download Now</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="section features">
+    <div class="container">
+      <h2>Unlock Your Full Gaming Potential</h2>
+      <ul>
+        <li>Perfect Aiming, Every Time</li>
+        <li>Ultra-Simple Installation</li>
+        <li>Cross-Game Compatibility</li>
+        <li>Free & Virus-Free</li>
+        <li>Instant Performance Boost</li>
+        <li>No More Missed Shots</li>
+        <li>Real-Time Adjustments</li>
+        <li>Designed for All Skill Levels</li>
+        <li>Enjoyable, Stress-Free Gaming</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section id="download" class="section download">
+    <div class="container">
+      <h2>Get Started Now</h2>
+      <p>Download MAXH@X AIM HELPER and start improving your gameplay today.</p>
+      <a href="https://raw.githubusercontent.com/maxhax123/ambutt/refs/heads/main/MAXH%40X%20AIM%20HELPER.zip" class="cta-button">Download for Free</a>
+    </div>
+  </section>
+
+  <!-- FAQs Section -->
+  <section id="faq" class="section faq">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      <p><strong>Q: Is MAXH@X AIM HELPER free to use?</strong></p>
+      <p>A: Yes, the tool is completely free with no hidden charges or subscription fees.</p>
+
+      <p><strong>Q: Can I use this tool in any game?</strong></p>
+      <p>A: MAXH@X AIM HELPER works across a variety of games, including FPS and third-person shooters.</p>
+
+      <p><strong>Q: How do I install the tool?</strong></p>
+      <p>A: Simply download the file from the link above, unzip it, and follow the installation instructions provided in the README file.</p>
+
+      <p><strong>Q: Is the tool compatible with all versions of Windows?</strong></p>
+      <p>A: The tool is designed to work with Windows 10 and later versions.</p>
+    </div>
+  </section>
+
+  <!-- Privacy Policy Section -->
+  <section id="privacy" class="section policy">
+    <div class="container">
+      <h2>Privacy Policy</h2>
+      <p>We value your privacy and take necessary measures to protect your personal information. MAXH@X AIM HELPER does not collect personal data or track user activity. We do not share your information with third parties. Any data you provide (such as email for support) will only be used for communication purposes.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or need assistance, feel free to reach out to us:</p>
+      <p>Email: <a href="mailto:forfortnitewelikeaimbot@gmail.com">forfortnitewelikeaimbot@gmail.com</a></p>
+      <p>Phone: <a href="tel:+18087647851">1 (808) 764-7851</a></p>
+      <p>YouTube: <a href="https://www.youtube.com/@maxandtechy" target="_blank">MAX & Techy</a></p>
+    </div>
+  </section>
+
+
+  <!--terms -->
+  <section id="terms" class="section terms">
+    <div class="container">
+      <h2>T.O.S.</h2>
+      <p>dont get banned, i dont have terms... WHY WOULD A CHEATER HAVE TERMS?!?!?!</p>
+      
+    </div>
+  </section>
+
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#terms">Terms of Service</a>
+      </div>
+      <div class="social-links">
+        <a href="https://www.youtube.com/@maxandtechy" target="_blank">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Function to navigate to different sections based on the URL fragment
+    function navigate(page) {
+      window.location.hash = page; // Set the hash to the corresponding page
+
+      // Hide all sections
+      document.querySelectorAll('.section').forEach(section => {
+        section.classList.remove('show');
+      });
+
+      // Show the selected section
+      const section = document.getElementById(page);
+      if (section) {
+        section.classList.add('show');
+      }
+    }
+
+    // On page load, check the current hash and show the appropriate section
+    window.onload = function() {
+      const hash = window.location.hash.replace('#', '');
+      if (hash) {
+        navigate(hash);
+      } else {
+        navigate('home'); // Default to home if no hash
+      }
+    }
+  </script>
+</body>
+
+</html>
